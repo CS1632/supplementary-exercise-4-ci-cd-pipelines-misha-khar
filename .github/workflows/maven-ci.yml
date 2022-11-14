@@ -55,8 +55,8 @@ jobs:
 
     steps:
     
-    - name: Check directory contents
-      run: ls -l
+    - name: Checkout repository
+      uses: actions/checkout@v3
 
     # https://github.com/marketplace/actions/maven-dependency-tree-dependency-submission
     - name: Update dependency graph
